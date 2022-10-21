@@ -10,29 +10,29 @@ def PlayGame():
         )
 
         # 背景图地址
-        BACKGROUND_PATH = '../../12_Reinforcement Learning/assets/sprites/background-black.png'
+        BACKGROUND_PATH = './assets/sprites/background-black.png'
 
         # 管道图片所在的地址
-        PIPE_PATH = '../../12_Reinforcement Learning/assets/sprites/pipe-green.png'
+        PIPE_PATH = './assets/sprites/pipe-green.png'
 
         IMAGES, SOUNDS, HITMASKS = {}, {}, {}
 
         # 加载成绩数字所需的图片
         IMAGES['numbers'] = (
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/0.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/1.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/2.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/3.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/4.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/5.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/6.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/7.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/8.png').convert_alpha(),
-            pygame.image.load('../../12_Reinforcement Learning/assets/sprites/9.png').convert_alpha()
+            pygame.image.load('./assets/sprites/0.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/1.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/2.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/3.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/4.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/5.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/6.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/7.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/8.png').convert_alpha(),
+            pygame.image.load('./assets/sprites/9.png').convert_alpha()
         )
 
         # 加载地面的图片
-        IMAGES['base'] = pygame.image.load('../../12_Reinforcement Learning/assets/sprites/base.png').convert_alpha()
+        IMAGES['base'] = pygame.image.load('./assets/sprites//base.png').convert_alpha()
 
         # 加载声音文件（在不同的系统中，声音文件扩展名不同）
         if 'win' in sys.platform:
